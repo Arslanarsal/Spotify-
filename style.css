@@ -1,9 +1,30 @@
-*{
-    padding: 0;
-    margin: 0;
-    
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
+/* body{
     background-color: black;
     color: white;
+} */
+
+.left {
+  /* margin: 10px; */
+  width: 25vw;
+  padding: 14px;
+}
+.right {
+  width: 75vw;
+}
+
+/* .hone {
+  background-color: #121212;
+} */
+
+.hone li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 30px;
+  padding-top: 15px;
 }
