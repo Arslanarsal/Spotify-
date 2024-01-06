@@ -1,25 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify clone</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="utility.css" />
-  </head>
-  <body>
-    <div class="container flex justify-content-center align-item-center">
-      <div class="left border">
-        <div class="hone">
-          <img src="Svg/logo.svg" alt="" />
-          <ul>
-            <li><img src="Svg/home.svg" alt="home" />Home</li>
-            <li><img src="Svg/search.svg" alt="search" />Search</li>
-          </ul>
-        </div>
-        <div class="library"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utility.css" />
+</head>
+
+<body>
+  <div class="container flex bg-black">
+    <!-- Left Side -->
+    <div class="left ">
+      <!-- Left side top Home -->
+      <div class="home rounded m-1 bg-grey p-4">
+        <img class="invert" src="Svg/logo.svg" alt="" />
+        <ul>
+          <li><img class="invert" src="Svg/home.svg" alt="home" />Home</li>
+          <li><img class="invert" src="Svg/search.svg" alt="search" />Search</li>
+        </ul>
       </div>
-      <div class="right border">fdgd</div>
+
+      <!-- Left side Library -->
+      <div class="library rounded m-1 bg-grey p-4">
+        <div class="heading flex align-item-center ">
+          <img class="invert" src="Svg/library.svg" alt="Library">
+          <h2>Your Library</h2>
+        </div>
+
+        <div class="footer ">
+          <div><a href="https://www.spotify.com/pk-en/legal/"><span>Legal</span></a></div>
+          <div><a href="https://www.spotify.com/pk-en/privacy/"><span>Privacy Center</span></a></div>
+          <div><a href="https://www.spotify.com/pk-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+          <div><a href="https://www.spotify.com/pk-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+          <div><a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+          <div><a href="https://www.spotify.com/pk-en/accessibility/"><span>Accessibility</span></a></div>
+        </div>
+
+
+
+
+      </div>
     </div>
-  </body>
+
+
+    <!-- Right Side -->
+    <div class="right rounded m-1 bg-grey ">
+      <div class="header">
+        <div class="nav">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+
+        </div>
+        <div class="btn">
+          <button class="bg-white ">Sign up</button>
+          <button class="bg-white log">log in</button>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</body>
+
 </html>
