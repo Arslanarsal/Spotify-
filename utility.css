@@ -3,6 +3,10 @@
   margin: 4px;
 }
 
+.b-r-1 {
+  border-radius: 5px;
+}
+
 .rounded {
   border-radius: 8px;
 }
@@ -47,4 +51,8 @@
 }
 .p-4{
   padding: 15px;
+}
+
+.g-1{
+  gap: 10px;
 }

@@ -18,6 +18,10 @@
   height: 100vh;
 }
 
+.home {
+  height: 40%;
+}
+
 .home li {
   display: flex;
   align-items: center;
@@ -31,14 +35,14 @@
   gap: 20px;
   font-size: small;
 }
- 
+
 .heading img {
   width: 31px;
 }
 
 .library {
   position: relative;
-  height: 82vh;
+  height: 59%;
 }
 
 .footer {
@@ -57,14 +61,14 @@
   color: gray;
 }
 
-.header{
+.header {
   background-color: rgb(121, 121, 121);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.btn button{
+.btn button {
   font-size: 1rem;
   padding: 14px 15px;
   margin-left: 10px;
@@ -72,6 +76,48 @@
 
 }
 
-.log{
+.log {
   padding: 100px;
+}
+
+
+/* --------->>>>>>>>>>>Soptify play list css */
+
+.card>* {
+  padding: 5px 5px;
+}
+
+.card {
+  position: relative;
+  width: 227px;
+  background-color: #181818;
+}
+
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.circle-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1ed760;
+  position: absolute;
+  right: 23px;
+  top: 200px;
+  opacity: 0;
+  transition: all 1s ease-in;
+
+}
+
+.circle-container svg {
+  width: 77%;
+  height: 77%;
+  margin: 4px;
+}
+.card:hover .circle-container {
+    opacity: 1;
+    top: 155px;
 }
