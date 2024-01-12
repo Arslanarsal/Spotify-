@@ -5,14 +5,17 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+
 }
 
 .left {
   width: 25vw;
+  height: 100vh;
 }
 
 .right {
   width: 75vw;
+  height: 100vh;
 }
 
 .home li {
@@ -35,7 +38,7 @@
 
 .library {
   position: relative;
-  height: 100vh;
+  height: 82vh;
 }
 
 .footer {
