@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
 
 .left {
@@ -19,7 +18,7 @@
 }
 
 .home {
-  height: 40%;
+  height: 177px;
 }
 
 .home li {
@@ -29,7 +28,6 @@
   width: 30px;
   padding-top: 15px;
 }
-
 
 .heading {
   gap: 20px;
@@ -62,37 +60,68 @@
 }
 
 .header {
-  background-color: rgb(121, 121, 121);
+  background-color: #1e1d1d;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
 }
 
-.btn button {
+.signup {
+  background-color: #1e1d1d;
+  color: darkgrey;
+  width: 80px;
+  border: 0;
   font-size: 1rem;
-  padding: 14px 15px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.signup:hover {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.signin {
+  background-color: #ffffff;
+  color: black;
+  width: 100px;
+  padding: 11px;
+  border: 0;
+  border-radius: 28px;
+  font-size: 1.1rem;
+  cursor: pointer;
   margin-left: 10px;
-  border-radius: 25px;
-
 }
 
-.log {
-  padding: 100px;
+.signin:hover {
+  padding: 13px 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-
 
 /* --------->>>>>>>>>>>Soptify play list css */
 
-.card>* {
+.cardcontainer {
+  max-height: 71vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.card > * {
   padding: 5px 5px;
 }
 
 .card {
   position: relative;
-  width: 227px;
+  width: 200px;
   background-color: #181818;
 }
-
 
 .card img {
   width: 100%;
@@ -100,16 +129,15 @@
 }
 
 .circle-container {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #1ed760;
   position: absolute;
   right: 23px;
   top: 200px;
   opacity: 0;
-  transition: all 1s ease-in;
-
+  transition: all 0.3s ease-in;
 }
 
 .circle-container svg {
@@ -118,6 +146,6 @@
   margin: 4px;
 }
 .card:hover .circle-container {
-    opacity: 1;
-    top: 155px;
+  opacity: 1;
+  top: 140px;
 }
