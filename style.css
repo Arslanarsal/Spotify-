@@ -52,6 +52,7 @@
   flex-wrap: wrap;
   font-size: 13px;
   gap: 10px 22px;
+  width: 280px;
 }
 
 .footer a {
