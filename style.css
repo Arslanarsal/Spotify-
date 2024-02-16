@@ -14,11 +14,12 @@
 
 .right {
   width: 75vw;
-  height: 100vh;
+  height: 90vh;
+  position: relative;
 }
 
 .home {
-  height: 177px;
+  height: 40%;
 }
 
 .home li {
@@ -40,7 +41,7 @@
 
 .library {
   position: relative;
-  height: 59%;
+  height: 40%;
 }
 
 .footer {
@@ -150,3 +151,13 @@
   opacity: 1;
   top: 140px;
 }
+
+/* Play bar */
+.playbar {
+  position: absolute;
+  bottom: 0;
+  background-color: green;
+  width: 100%;
+  padding: 10px;
+}
+

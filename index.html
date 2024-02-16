@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="utility.css" />
   </head>
 
-  <body>
+  <body class="bg-black">
     <div class="container flex bg-black">
       <!-- Left Side -->
       <div class="left">
@@ -114,6 +114,7 @@
 
           <!-- Card Containe -->
           <div class="cardcontainer m-1 flex g-1 flex-wrap p-t-1">
+            <!-- Spotify Cards -->
             <div class="card p-1 b-r-1">
               <div class="circle-container">
                 <!-- SVG code -->
@@ -143,9 +144,21 @@
               <h2>Today Top Hits</h2>
               <p>Ariana Grande is on top of the Hottest 50!</p>
             </div>
+
+            <!-- Playbutton -->
+          </div>
+          <div class="playbar">
+            <div class="songinfo"></div>
+            <div class="songbutton flex justify-content-center g-1">
+              <img src="Svg/previous.svg" alt="" />
+              <img src="Svg/play.svg" alt="" />
+              <img src="Svg/next.svg" alt="" />
+              <div class="songtime"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
