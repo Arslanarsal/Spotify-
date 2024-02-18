@@ -31,18 +31,7 @@
           </div>
 
           <div class="songlist">
-            <ul>
-
-           
-              
-
-              <!-- ksbhvjsj -->
-
-
-
-
-
-            </ul>
+            <ul></ul>
           </div>
 
           <div class="footer">
@@ -162,14 +151,22 @@
 
             <!-- Playbutton -->
           </div>
-          <div class="playbar">
-            <div class="songinfo"></div>
-            <div class="songbutton flex justify-content-center g-1">
-              <img src="Svg/previous.svg" alt="" />
-              <img src="Svg/play.svg" alt="" />
-              <img src="Svg/next.svg" alt="" />
-              <div class="songtime"></div>
+          <div class="playbar invert flex justify-content-sp align-item-start">
+
+            <div class="seeker">
+              <div class="circle"></div>
             </div>
+
+            <div class="songinfo"></div>
+
+            <div class="songbutton flex justify-content-center g-1">
+              <img class="c-p" id="previous" src="Svg/previous.svg" alt="" />
+              <img class="c-p" id="songpause" src="Svg/play.svg" alt="" />
+              <img class="c-p" id="next" src="Svg/next.svg" alt="" />
+            </div>
+
+            <div class="songtime flex justify-content-end">00:00/00:00</div>
+
           </div>
         </div>
       </div>
