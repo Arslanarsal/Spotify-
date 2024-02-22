@@ -19,7 +19,7 @@
 }
 
 .home {
-  height: 20%;
+  height: 150px;
 }
 
 .home li {
@@ -235,4 +235,28 @@
 .songtime {
   position: relative;
   right: 0;
+}
+
+.hamburger {
+  display: none;
+}
+
+.cross {
+  display: none;
+  position: absolute;
+  right: 15px;
+}
+
+/* Responsive of Mobile and other */
+
+@media (max-width: 900px) {
+  .left {
+    width: 0vw;
+  }
+  .right {
+    width: 100vw;
+  }
+  .hamburger {
+    display: inline;
+  }
 }

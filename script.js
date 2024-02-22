@@ -107,6 +107,28 @@ async function main() {
 
     cursong.currentTime = (cursong.duration * percent) / 100;
   });
+
+  document.querySelector(".hamburger").addEventListener("click", function () {
+    let left = document.querySelector(".left");
+    let right = document.querySelector(".right");
+    let hamburger = document.querySelector(".hamburger");
+    let cross = document.querySelector(".cross");
+    left.style.width = "25vw";
+    right.style.width = "75vw";
+    hamburger.style.display = "none";
+    cross.style.display = "inline";
+  });
+
+  document.querySelector(".cross").addEventListener("click", function () {
+    let left = document.querySelector(".left");
+    let right = document.querySelector(".right");
+    let hamburger = document.querySelector(".hamburger");
+    let cross = document.querySelector(".cross");
+    left.style.width = "0vw";
+    right.style.width = "100vw";
+    hamburger.style.display = "inline";
+    cross.style.display = "none";
+  });
 }
 
 main();

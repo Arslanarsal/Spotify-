@@ -66,6 +66,10 @@
   margin: 15px;
 }
 
+.m-l-4 {
+  margin-right: 16px;
+}
+
 .p-1 {
   padding: 5px;
 }
@@ -91,4 +95,12 @@
 
 .c-p {
   cursor: pointer;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
 }
