@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
   </head>
 
   <body class="bg-black">
@@ -75,7 +75,11 @@
         <!-- Header -->
         <div class="header p-4">
           <div class="nav">
-            <img class="hamburger invert m-l-4" src="SVG/hamburder.svg" alt="">
+            <img
+              class="hamburger invert m-l-4"
+              src="SVG/hamburder.svg"
+              alt=""
+            />
             <svg
               width="24"
               height="24"
@@ -116,45 +120,15 @@
 
         <!-- Play list Container -->
         <div class="spotifylistcontainer p-4">
-          <h1>Spotify Playlists</h1>
+          <h1 class="soptyname">Spotify Playlists</h1>
 
           <!-- Card Containe -->
           <div class="cardcontainer m-1 flex g-1 flex-wrap p-t-1">
             <!-- Spotify Cards -->
-            <div class="card p-1 b-r-1">
-              <div class="circle-container">
-                <!-- SVG code -->
-                <span
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  class="IconWrapper__Wrapper-sc-1hf1hjl-0 bjlVXn"
-                >
-                  <svg
-                    data-encore-id="icon"
-                    role="img"
-                    aria-hidden="true"
-                    viewBox="0 0 24 24"
-                    class="Svg-sc-ytk21e-0 iYxpxA"
-                  >
-                    <path
-                      d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
-                    ></path>
-                  </svg>
-                </span>
-              </div>
-
-              <img
-                src="https://i.scdn.co/image/ab67706f00000002b81fa84dfd95340eeeaacd04"
-                alt=""
-              />
-              <h2>Today Top Hits</h2>
-              <p>Ariana Grande is on top of the Hottest 50!</p>
-            </div>
-
-            <!-- Playbutton -->
           </div>
-          <div class="playbar invert flex justify-content-sp align-item-start">
 
+          <!-- Playbutton -->
+          <div class="playbar invert flex justify-content-sp align-item-start">
             <div class="seeker">
               <div class="circle"></div>
             </div>
@@ -162,17 +136,30 @@
             <div class="songinfo"></div>
 
             <div class="songbutton flex justify-content-center g-1">
-              <img class="c-p" id="previous" src="Svg/previous.svg" alt="" />
-              <img class="c-p" id="songpause" src="Svg/play.svg" alt="" />
-              <img class="c-p" id="next" src="Svg/next.svg" alt="" />
+              <img
+                class="c-p previous"
+                id="previous"
+                src="Svg/previous.svg"
+                alt=""
+              />
+              <img
+                class="c-p songpause"
+                id="songpause"
+                src="Svg/play.svg"
+                alt=""
+              />
+              <img class="c-p next" id="next" src="Svg/next.svg" alt="" />
             </div>
-
             <div class="songtime flex justify-content-end">00:00/00:00</div>
 
+            <div class="volume">
+              <img class="c-p" src="SVG/volume.svg" alt="" />
+              <input class="c-p" type="range" name="volume" id="" />
+            </div>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </html>
