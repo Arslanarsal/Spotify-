@@ -106,7 +106,6 @@ async function displayalbum() {
           pictype = e.innerText.split(".")[1];
         }
       });
-      
 
       let responce = await a.json();
 
